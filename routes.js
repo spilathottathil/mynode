@@ -8,7 +8,7 @@ const reqHandler = (req, res) => {
     if(url === '/'){
         res.write('<html>');
         res.write('<head><title>Enter your message</title></head>');
-        res.write('<body><form action="/create-user" method="POST"><input type="text" name="create-user"><button type="submit">Send</button></input></form></body>');
+        res.write('<body><form action="/create-user" method="POST"><input type="text" name="create"><button type="submit">Send</button></input></form></body>');
         res.write('</html>');
         return res.end();
     }
@@ -66,7 +66,7 @@ const reqHandler = (req, res) => {
 //module.exports = reqHandler;
 module.exports = {
     handler : reqHandler,
-    text : 'Using routes now'
+    text : 'Use routes after nodemon'
 };
 
 //exports.handler = reqHandler;
